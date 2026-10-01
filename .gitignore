@@ -1,2 +1,5 @@
-.DS_Store
-node_modules/
+# 临时/垃圾文件
+*.bak
+*.crdownload
+*.orig
+*.rej

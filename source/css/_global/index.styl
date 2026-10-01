@@ -100,7 +100,9 @@
 
 body
   position: relative
-  overflow-y: scroll
+  // 修复：overflow-y: scroll 会把 body 变成滚动容器，导致 position: sticky 失效
+  //（sticky 会相对不滚动的 body 而非视口解析）。滚动条已在 html 上预留，这里保持 visible。
+  overflow-y: visible
   min-height: 100%
   background: var(--global-bg)
   color: var(--font-color)
